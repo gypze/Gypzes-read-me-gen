@@ -54,12 +54,18 @@ const questions = [{
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFileSync(fileName, data);
+    fs.writeFileSync(fileName, data, (err) => {
+        if (err) {
+            console.log(err);
+        } else {
+        console.log('README.md has been generated!');
+        }
+    });
 }
 
 // TODO: Create a function to initialize app
 function init() {
-    inquirer.createPrompt(questions).then((answers) => {
+    inquirer.prompt(questions).then((answers) => {
         const markdown = generateMarkdown(answers);
         writeToFile('README.md', markdown);
     });
