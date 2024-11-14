@@ -11,3 +11,4 @@ function init() {}
 
 // Function call to initialize app
 init();
+// adding a comment to test the git push
