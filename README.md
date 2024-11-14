@@ -37,6 +37,10 @@ https://drive.google.com/file/d/1ADbn1wezmVO_O3NNvqadQuSynNvDWtS6/view
 - Supports multiple license options
 - Automatically formats the Table of Contents
 
+## Source
+
+I used the Learning Assistant with any questions that arrose, and had starter code to work with.
+
 ## How to Contribute
 
 1. Fork the repository
