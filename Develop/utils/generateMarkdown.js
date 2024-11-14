@@ -13,7 +13,7 @@ function renderLicenseLink(license) {
   if (license === 'None') {
     return '';
   }
-  return `\n* [License](#license)\n`;
+  return `- [License](#license)\n`;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -31,18 +31,24 @@ This project is licensed under the ${license} license.`;
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
 ${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
 
 ## Table of Contents
+- [Title](#title)
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
 ${renderLicenseLink(data.license)}
-- [Contributing](#contributing)
+- [Contribution](#contribution)
 - [Tests](#tests)
 - [Questions](#questions)
+- [license](#license)
+- [GitHub](#github)
+- [Email](#email)
 
 ## Installation
 ${data.installation}
